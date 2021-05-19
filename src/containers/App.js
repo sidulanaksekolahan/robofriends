@@ -17,7 +17,7 @@ class App extends Component {
 
     componentDidMount() {
         // fetch data from end point and update the state of robots
-        fetch('http://jsonplaceholder.typicode.com/users')
+        fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
             .then(json => this.setState({
                 robots: json
